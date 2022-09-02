@@ -47,7 +47,7 @@ sup {
 }
 
 #app-top {
-  background-image: url(img/paris.jpeg);
+  background-image: url("../img/london.jpeg");
   background-repeat: no-repeat;
   background-size: 100%;
   object-fit: cover;
@@ -86,7 +86,6 @@ p.funTtext {
   );
   border-radius: 2px;
 }
-
 img {
   display: block;
   margin: 0 auto;
