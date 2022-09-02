@@ -1,0 +1,93 @@
+body {
+  font-family: "Bebas Neue", cursive;
+  font-family: "Ubuntu Mono", monospace;
+}
+h5 {
+  font-size: 1.8rem;
+  color: #5a6275;
+}
+p {
+  margin: 0 auto;
+}
+p.forecast {
+  text-align: start;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  color: #5a6275;
+}
+sup {
+  font-size: large;
+}
+
+#weather-description {
+  text-transform: capitalize;
+}
+
+#search-box {
+  flex-direction: column;
+}
+
+#chosen-city,
+#week-forecast {
+  margin: 0 auto;
+}
+
+#container-today,
+#container-forecast {
+  display: block;
+  max-width: 90%;
+  border: 1px rgba(0, 0, 0, 0.07) solid;
+  border-radius: 2px;
+  margin: 30px auto;
+  padding: 40px 20px 10px;
+}
+#container-forecast {
+  padding: 20px 10px 10px;
+  max-width: 95%;
+}
+
+#app-top {
+  background-image: url(img/paris.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  object-fit: cover;
+}
+ul.range {
+  list-style-type: none;
+  font-size: 15px;
+  color: #5a6275;
+  padding: 5px 0;
+}
+
+.tempToday,
+.iconToday {
+  font-weight: 700;
+  margin: 20px 5px;
+  font-size: 40px;
+  /*Image provided by Vecteezy.com*/
+}
+
+.tempToday {
+  padding-top: 10px;
+}
+
+p.funTtext {
+  text-align: right;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 15px;
+  color: black;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 10%,
+    rgba(255, 255, 255, 0.3604035364145658) 48%,
+    rgba(255, 255, 255, 0.9) 95%
+  );
+  border-radius: 2px;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
