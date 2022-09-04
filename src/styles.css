@@ -1,3 +1,4 @@
+/*//////////////      Color themes            /////////////////*/
 .first-color {
   background: #f9ecec;
 }
@@ -17,6 +18,9 @@
 .fifth-color {
   background: rgb(83, 105, 130);
 }
+
+/*//////////////      html elements - alphabetical order            /////////////////*/
+
 body {
   font-family: "Bebas Neue", cursive;
   font-family: "Ubuntu Mono", monospace;
@@ -30,89 +34,23 @@ h5 {
   font-size: 1.8rem;
   color: #5a6275;
 }
+img {
+  display: block;
+  margin: 0 auto;
+}
 p {
   margin: 0 auto;
 }
+
 p.forecast {
   text-align: start;
   margin-left: 20px;
   margin-bottom: 15px;
   color: #5a6275;
 }
+
 sup {
   font-size: large;
-}
-#app-top {
-  margin-top: 10px;
-  padding: 10px 20px;
-}
-
-#weather-description {
-  text-transform: capitalize;
-}
-
-#weather-tip {
-  margin: 0;
-}
-
-#search-box {
-  flex-direction: column;
-}
-
-#chosen-city,
-#week-forecast {
-  margin: 0 5px;
-}
-
-#container-today,
-#container-forecast {
-  display: block;
-  max-width: 90%;
-  border: 1px rgba(0, 0, 0, 0.07) solid;
-  border-radius: 2px;
-  margin: 30px 20px;
-  padding: 20px;
-}
-#container-forecast {
-  padding: 20px 10px 10px;
-  --bs-bg-opacity: 0.7;
-}
-
-#container-today {
-  background-image: url("../img/london.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-clip: content-box;
-  border-radius: 2px;
-}
-#current-loc-btn {
-  position: relative;
-  overflow: hidden;
-  color: #ecf2f9;
-  letter-spacing: 1px;
-  font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma,
-    Sans-Serif;
-  font-size: 14px;
-  border-radius: 10px;
-  border-color: #f0d9d9;
-  padding: 10px;
-}
-
-#underline {
-  width: 100%;
-  height: 2.5px;
-  margin-top: 15px;
-  align-self: flex-end;
-  left: -200px;
-  background: #f0d9d9;
-  position: absolute;
-  transition: all 0.3s ease-Out;
-  bottom: 0;
-}
-
-#current-loc-btn:hover #underline {
-  left: 0;
-  cursor: pointer;
 }
 
 ul.range {
@@ -122,21 +60,11 @@ ul.range {
   padding: 5px 0;
 }
 
+/*//////////////      class elements - alphabetical order            /////////////////*/
+
 .col-6.button-position {
   text-align: end;
 }
-.tempToday,
-.iconToday {
-  font-weight: 700;
-  margin: 20px 5px;
-  font-size: 40px;
-  /*Image provided by Vecteezy.com*/
-}
-
-.tempToday {
-  padding-top: 10px;
-}
-
 .fun-text {
   text-align: right;
   font-size: 14px;
@@ -150,7 +78,88 @@ ul.range {
     rgba(255, 255, 255, 0.9) 95%
   );
 }
-img {
+.tempToday {
+  padding-top: 10px;
+}
+.tempToday,
+.iconToday {
+  font-weight: 700;
+  margin: 20px 5px;
+  font-size: 40px;
+  /*Image provided by Vecteezy.com*/
+}
+
+/*//////////////      id elements - alphabetical order            /////////////////*/
+
+#app-top {
+  margin-top: 10px;
+  padding: 10px 20px;
+}
+
+#chosen-city,
+#week-forecast {
+  margin: 0 5px;
+}
+
+#container-forecast {
+  padding: 20px 10px 10px;
+  --bs-bg-opacity: 0.7;
+}
+
+#container-today {
+  background-image: url("../img/london.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: content-box;
+  border-radius: 2px;
+}
+
+#container-today,
+#container-forecast {
   display: block;
-  margin: 0 auto;
+  max-width: 90%;
+  border: 1px rgba(0, 0, 0, 0.07) solid;
+  border-radius: 2px;
+  margin: 30px 20px;
+  padding: 20px;
+}
+
+#current-loc-btn {
+  position: relative;
+  overflow: hidden;
+  color: #ecf2f9;
+  letter-spacing: 1px;
+  font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma,
+    Sans-Serif;
+  font-size: 14px;
+  border-radius: 10px;
+  border-color: #f0d9d9;
+  padding: 10px;
+}
+
+#current-loc-btn:hover #underline {
+  left: 0;
+  cursor: pointer;
+}
+#underline {
+  width: 100%;
+  height: 2.5px;
+  margin-top: 15px;
+  align-self: flex-end;
+  left: -200px;
+  background: #f0d9d9;
+  position: absolute;
+  transition: all 0.3s ease-Out;
+  bottom: 0;
+}
+
+#search-box {
+  flex-direction: column;
+}
+#weather-description {
+  text-transform: capitalize;
+}
+
+#weather-tip {
+  margin: 0;
 }
