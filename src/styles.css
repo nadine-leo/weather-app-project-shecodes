@@ -1,6 +1,11 @@
 body {
   font-family: "Bebas Neue", cursive;
   font-family: "Ubuntu Mono", monospace;
+  background: linear-gradient(
+    109.6deg,
+    rgb(245, 239, 249) 30.1%,
+    rgb(207, 211, 236) 100.2%
+  );
 }
 h5 {
   font-size: 1.8rem;
@@ -18,9 +23,17 @@ p.forecast {
 sup {
   font-size: large;
 }
+#app-top {
+  margin-top: 10px;
+  padding: 10px 20px;
+}
 
 #weather-description {
   text-transform: capitalize;
+}
+
+#weather-tip {
+  margin: 0;
 }
 
 #search-box {
@@ -29,7 +42,7 @@ sup {
 
 #chosen-city,
 #week-forecast {
-  margin: 0 auto;
+  margin: 0 5px;
 }
 
 #container-today,
@@ -38,19 +51,25 @@ sup {
   max-width: 90%;
   border: 1px rgba(0, 0, 0, 0.07) solid;
   border-radius: 2px;
-  margin: 30px auto;
-  padding: 40px 20px 10px;
+  margin: 30px 20px;
+  padding: 20px;
 }
 #container-forecast {
   padding: 20px 10px 10px;
-  max-width: 95%;
+  --bs-bg-opacity: 0.5;
 }
 
-#app-top {
+#container-today {
   background-image: url("../img/london.jpeg");
   background-repeat: no-repeat;
-  background-size: 100%;
-  object-fit: cover;
+  background-position: center center;
+  background-size: cover;
+  background-clip: content-box;
+  border-radius: 2px;
+  opacity: 100%;
+}
+#current-loc-btn {
+  background-color: white;
 }
 ul.range {
   list-style-type: none;
@@ -71,20 +90,18 @@ ul.range {
   padding-top: 10px;
 }
 
-p.funTtext {
+.fun-text {
   text-align: right;
   font-size: 14px;
   font-weight: 500;
   margin-top: 15px;
   color: black;
-  background: rgb(255, 255, 255);
   background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 0) 10%,
     rgba(255, 255, 255, 0.3604035364145658) 48%,
     rgba(255, 255, 255, 0.9) 95%
   );
-  border-radius: 2px;
 }
 img {
   display: block;

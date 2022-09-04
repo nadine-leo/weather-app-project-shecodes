@@ -53,7 +53,7 @@ function callNavigator() {
   cityInput.value = "";
 }
 
-let buttonCurrent = document.querySelector("#current-loc");
+let buttonCurrent = document.querySelector("#current-loc-btn");
 buttonCurrent.addEventListener("click", callNavigator);
 
 callNavigator();
