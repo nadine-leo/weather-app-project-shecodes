@@ -1,10 +1,29 @@
+.first-color {
+  background: #f9ecec;
+}
+
+.second-color {
+  background: #f0d9da;
+}
+
+.third-color {
+  background: #c8d9eb;
+}
+
+.fourth-color {
+  background: #ecf2f9;
+}
+
+.fifth-color {
+  background: rgb(83, 105, 130);
+}
 body {
   font-family: "Bebas Neue", cursive;
   font-family: "Ubuntu Mono", monospace;
   background: linear-gradient(
-    109.6deg,
-    rgb(245, 239, 249) 30.1%,
-    rgb(207, 211, 236) 100.2%
+    90.6deg,
+    rgb(249, 235, 236) 30.1%,
+    rgb(236, 242, 249) 100.2%
   );
 }
 h5 {
@@ -56,21 +75,46 @@ sup {
 }
 #container-forecast {
   padding: 20px 10px 10px;
-  --bs-bg-opacity: 0.5;
+  --bs-bg-opacity: 0.7;
 }
 
 #container-today {
   background-image: url("../img/london.jpeg");
   background-repeat: no-repeat;
-  background-position: center center;
   background-size: cover;
   background-clip: content-box;
   border-radius: 2px;
-  opacity: 100%;
 }
 #current-loc-btn {
-  background-color: white;
+  position: relative;
+  overflow: hidden;
+  color: #ecf2f9;
+  letter-spacing: 1px;
+  font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma,
+    Sans-Serif;
+  font-size: 14px;
+  border-radius: 10px;
+  border-color: #f0d9d9;
+  padding: 10px;
 }
+
+#underline {
+  width: 100%;
+  height: 2.5px;
+  margin-top: 15px;
+  align-self: flex-end;
+  left: -200px;
+  background: #f0d9d9;
+  position: absolute;
+  transition: all 0.3s ease-Out;
+  bottom: 0;
+}
+
+#current-loc-btn:hover #underline {
+  left: 0;
+  cursor: pointer;
+}
+
 ul.range {
   list-style-type: none;
   font-size: 15px;
@@ -78,6 +122,9 @@ ul.range {
   padding: 5px 0;
 }
 
+.col-6.button-position {
+  text-align: end;
+}
 .tempToday,
 .iconToday {
   font-weight: 700;
