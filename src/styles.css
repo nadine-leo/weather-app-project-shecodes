@@ -26,7 +26,6 @@ a {
 }
 
 body {
-  font-family: "Bebas Neue", cursive;
   font-family: "Ubuntu Mono", monospace;
   background: linear-gradient(
     90.6deg,
@@ -135,7 +134,6 @@ ul.range {
   overflow: hidden;
   color: #ecf2f9;
   letter-spacing: 1px;
-  font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma,
     Sans-Serif;
   font-size: 14px;
   border-radius: 10px;
